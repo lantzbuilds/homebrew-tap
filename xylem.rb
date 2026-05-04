@@ -5,21 +5,21 @@
 class Xylem < Formula
   desc "Terminal file browser with syntax highlighting"
   homepage "https://github.com/lantzbuilds/xylem"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/lantzbuilds/xylem/releases/download/v0.1.0/xylem_darwin_amd64.tar.gz"
-      sha256 "51ad8cf4eca88a01ec759a12aa0f2e51ffac7c56eeac707459529bb12259d106"
+      url "https://github.com/lantzbuilds/xylem/releases/download/v0.1.1/xylem_darwin_amd64.tar.gz"
+      sha256 "a22fb9b67dd797051bc98f85729cc7128bbe8530fd6f4a0d6c87ce8bab16ecc7"
 
       define_method(:install) do
         bin.install "xylem"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/lantzbuilds/xylem/releases/download/v0.1.0/xylem_darwin_arm64.tar.gz"
-      sha256 "f6fcebd1d473c4463ba02e8ed8aeb9f42df92782432a0282b2aa8cd0fad29bde"
+      url "https://github.com/lantzbuilds/xylem/releases/download/v0.1.1/xylem_darwin_arm64.tar.gz"
+      sha256 "18a3d414930518fa67920b652ee12c99f77776b87a38ec5f228010ae2137ee0f"
 
       define_method(:install) do
         bin.install "xylem"
@@ -29,15 +29,15 @@ class Xylem < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lantzbuilds/xylem/releases/download/v0.1.0/xylem_linux_amd64.tar.gz"
-      sha256 "d22979f75930e7bcee717bc05ae140823d6189bdf7c934a97ac1f9881978a7a9"
+      url "https://github.com/lantzbuilds/xylem/releases/download/v0.1.1/xylem_linux_amd64.tar.gz"
+      sha256 "c5a3bb0e19cc7ceb3b620166162c537450bedd738df1f88a4da8f26a3b3b86e6"
       define_method(:install) do
         bin.install "xylem"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lantzbuilds/xylem/releases/download/v0.1.0/xylem_linux_arm64.tar.gz"
-      sha256 "eb145213858c8a2321c72ca238024c6136e6f7c64904823ba36f1e919cf2fb7e"
+      url "https://github.com/lantzbuilds/xylem/releases/download/v0.1.1/xylem_linux_arm64.tar.gz"
+      sha256 "c693e4d6b67547fe9c57ffb1c3dd91bd550bf60279e97467404faa08ebf23307"
       define_method(:install) do
         bin.install "xylem"
       end
